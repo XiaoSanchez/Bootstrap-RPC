@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration SYSTEM "http://ydlclass.com/yrpc-config.dtd">
+<configuration>
+
+    <port>8094</port>
+    <appName>yrpc-default-appName</appName>
+    <registry url="zookeeper://127.0.0.1:2181"/>
+
+    
+    <serializeType type="hessian"/>
+    <serializer code="3" name="hession" class="com.ydlclass.serialize.impl.HessianSerializer"/>
+
+    
+    <compressType type="gzip"/>
+    <compressor code="1" name="hession"  class="com.ydlclass.compress.impl.GzipCompressor"/>
+
+    
+    <loadBalancer class="com.ydlclass.loadbalancer.impl.MinimumResponseTimeLoadBalancer"/>
+    <loadBalancerType type="minimumResponseTime"/>
+
+    <idGenerator class="com.ydlclass.IdGenerator" dataCenterId="2" MachineId="4"/>
+
+</configuration>
