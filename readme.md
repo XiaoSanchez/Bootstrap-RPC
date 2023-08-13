@@ -1,6 +1,6 @@
-# HandwrittenRPC Framework
+# Bootstrap RPC Framework
 
-HandwrittenRPC is an open-source RPC (Remote Procedure Call) framework that facilitates seamless communication between service providers and consumers, enabling remote method invocation. The framework is built on top of Netty for efficient network communication and leverages ZooKeeper for service discovery and governance. With a focus on performance, extensibility, and robustness, HandwrittenRPC offers essential features such as load balancing, circuit breaking, traffic isolation, and more.
+HandwrittenRPC is an open-source RPC (Remote Procedure Call) framework that facilitates seamless communication between service providers and consumers, enabling remote method invocation which builds from scratch. The framework is built on top of Netty for efficient network communication and leverages ZooKeeper for service discovery and governance. With a focus on performance, extensibility, and robustness, HandwrittenRPC offers essential features such as load balancing, circuit breaking, traffic isolation, and more.
 
 ## Key Features
 
